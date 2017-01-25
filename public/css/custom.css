@@ -1,0 +1,316 @@
+        body{
+        background-color: rgb(240,240,240);
+      }
+
+      .navbar{
+      	border-radius: 0;
+      	background: rgba(0,0,0,0.6);
+      	position:fixed;
+   			z-index:10;
+      	width:100%;
+    	  padding: 0 7em;
+      }
+      @media only screen and (max-width: 770px) {
+        .navbar{
+          background-color: #333233;
+          padding: 0;
+          position:relative;
+          margin-bottom: 0;
+        }
+      }
+
+      .navbar-inverse .navbar-nav>li>a {
+ 			  color: #fff;
+			}
+
+			.navbar-inverse .navbar-nav > li > a:hover,
+			.navbar-inverse .navbar-nav > li > a:focus {
+			  font-size: 120%;
+  		  color: #fff;
+  		  background-color: transparent;
+			}
+
+			.navbar-brand {
+		    padding: 0;
+      		}
+			.navbar-brand > img {
+				height: 40px;
+				margin: 5px 0px;
+			}
+
+      .foots{
+        background-color: #333233;
+        min-height: 50px;
+      }
+
+      .footscopy{
+        margin-top: 5px;
+        padding: 0em 0em;
+        color: #999;
+        }
+        @media only screen and (max-width: 770px) {
+        .footscopy{
+           padding: 0em 2em 2em 2em;
+        }
+      }
+
+      .footimg{
+        float: right;
+        padding: 0;
+      }
+      @media only screen and (max-width: 770px) {
+        .footimg{
+          /* The Magic Float Center Code */
+          float: right;
+          position: relative;
+          left: -46%; /* or right 50% */
+          text-align: left;
+        }
+      }
+
+			.carousel {
+				width: 100%;
+    	/*		position:absolute;*/
+    			top:0;    
+			}
+
+      .banners{
+        }
+      @media only screen and (max-width: 770px) {
+        .banners{
+          margin-top: 0px;
+          padding-top: 0px;
+        }
+      }
+
+      /*HOME PAGE     HOME PAGE     HOME PAGE    HOME PAGE   HOME PAGE   HOME PAGE   HOME PAGE*/
+      .homeh3{
+        margin: 0;
+        padding-top: 1em;
+      }
+
+      .homecontainer{
+        padding:3em 7em;
+        background-color: rgb(240,240,240);
+        margin-bottom: 50px;
+      }
+      @media only screen and (max-width: 770px) {
+        .homecontainer{
+          padding: 0em 0em;
+          margin-bottom: 0px;
+        }
+      }
+
+      .homecol{
+        background-color: rgb(240,240,240); 
+      }
+
+      .homediv{
+        padding: 0em 2em 2em 2em;
+        background-color:#fff; 
+        border:1px solid #696969; 
+        border-style: none solid solid solid;
+        min-height: 30em;
+      }
+
+      @media only screen and (max-width: 770px) {
+        .homediv{
+          min-height: 15em;
+           border-style: none;
+        }
+      }
+
+
+
+			.homeimg{
+        width: 100%;
+        margin-top: 1em;
+        border:1px solid #696969;
+        border-style: solid solid none solid;
+
+      }
+      @media only screen and (max-width: 770px) {
+        .homeimg{
+          margin-top: 0em;
+          border-style: none;
+        }
+      }
+      
+      .custombtn{
+        background-color: #fff;
+        color: #BF3D3F;
+         border:1px solid #BF3D3F; 
+        border-radius: 15px;
+        min-width: 150px;
+        min-height:40px;
+      }
+
+      .custombtn:hover{
+        color: #fff;
+        background-color: #BF3D3F;
+        border:1px solid #fff; 
+      }
+
+
+      /*ABOUT PAGE*/
+
+      .aboutcontainer{
+        padding:3em 10em;
+        background-color: rgb(240,240,240);
+        margin-bottom: 50px;
+      }
+      @media only screen and (max-width: 770px) {
+        .aboutcontainer{
+          padding: 0em 0em;
+          margin-bottom: 0px;
+        }
+      }
+
+      .aboutcol{
+        background-color: rgb(240,240,240); 
+      }
+      @media only screen and (max-width: 770px) {
+        .aboutcol{
+         padding: 0;
+        }
+      }
+      .aboutdiv{
+        padding: 1em 2em 2em 2em;
+        background-color:#fff; 
+        border:1px solid #696969; 
+        border-style: none solid solid solid;
+        min-height: 20em;
+      }
+
+      @media only screen and (max-width: 770px) {
+        .aboutdiv{
+          border-style: none;
+          min-height: 15em;
+        }
+      }
+
+      .aboutimg{
+        width: 100%;
+        margin-top: 2em;
+        border:1px solid #696969;
+        border-style: solid solid none solid;
+
+      }
+       @media only screen and (max-width: 770px) {
+        .aboutimg{
+          margin-top: 0em;
+          min-height: 15em;
+          border-style: none;
+        }
+      }
+
+      .ordercontainer{
+        padding:3em 7em;
+        background-color: rgb(240,240,240);
+        margin-bottom: 50px;
+      }
+
+      @media only screen and (max-width: 770px) {
+        .ordercontainer{
+          padding: 0em 0em;
+          margin-bottom: 0px;
+          background-color: #fff;
+        }
+      }
+
+      .ordercol{
+        background-color: rgb(240,240,240);
+        margin-top: 2em;
+      }
+
+     @media only screen and (max-width: 770px) {
+        .ordercol{
+         padding: 0;
+         margin-top: 0em;
+        }
+      }
+
+      .orderdiv{
+        padding: 1em 2em 2em 2em;
+        background-color:#fff; 
+        border:1px solid #696969; 
+        border-style: solid solid solid solid;
+        min-height: 20em;
+      }
+
+      @media only screen and (max-width: 770px) {
+        .orderdiv{
+          border-style: none;
+          min-height: 15em;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+
+
+      @media only screen and (max-width: 770px) {
+        .aboutdiv{
+          min-height: 15em;
+        }
+      }
+
+
+      /*RECIPE PAGE   RECIPE PAGE    RECIPE PAGE    RECIPE PAGE     RECIPE PAGE    RECIPE PAGE  */
+      .recipecontainer{
+        padding:3em 7em;
+        background-color: rgb(240,240,240);
+        margin-bottom: 50px;
+      }
+      @media only screen and (max-width: 770px) {
+        .recipecontainer{
+          padding: 0em 0em;
+          margin-bottom: 0px;
+        }
+      }
+
+      .recipecol{
+        background-color: rgb(240,240,240); 
+        margin-top: 0em;
+        margin-bottom: 2em;
+      }
+
+      @media only screen and (max-width: 770px) {
+        .recipecol{
+          margin: 0em;
+          padding: 0em;
+  
+        }
+      }
+
+      .recipediv{
+        padding: 0em 2em 2em 2em;
+        background-color:#fff; 
+        border:1px solid #696969; 
+        border-style: none solid solid solid;
+        min-height: 20em;
+      }
+
+      @media only screen and (max-width: 770px) {
+        .recipediv{
+          min-height: 15em;
+           border-style: none;
+        }
+      }
+
+
+
+      .recipeimg{
+        width: 100%;
+        margin-top: 1em;
+        border:1px solid #696969;
+        border-style: solid solid none solid;
+
+      }
+      @media only screen and (max-width: 770px) {
+        .recipeimg{
+          margin-top: 0em;
+          border-style: none;
+        }
+      }
+      
