@@ -48,7 +48,8 @@ class GroceryController extends Controller
      */
     public function show($id)
     {
-        //
+         $grocery = Grocery::findOrFail($id);
+         return view('grocery.show', compact('grocery'));
     }
 
     /**

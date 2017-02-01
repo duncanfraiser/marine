@@ -1,7 +1,20 @@
+
+
         body{
         background-color: rgb(240,240,240);
       }
-
+        .homelinks{
+          color: black;
+        }
+        .homelinks:hover{
+          color: #BF3D3F;
+        }
+        a {
+          color: #BF3D3F;
+        }
+        a:hover{
+          color: #BF3D3F;
+        }
       .navbar{
       	border-radius: 0;
       	background: rgba(0,0,0,0.6);
@@ -30,6 +43,15 @@
   		  background-color: transparent;
 			}
 
+      .navimg{
+        height: 40px;
+        margin: 5px;
+      }
+      .navimg:hover{
+        height:44px;
+        margin: 3px;
+
+      }
 			.navbar-brand {
 		    padding: 0;
       		}
@@ -103,6 +125,7 @@
 
       .homecol{
         background-color: rgb(240,240,240); 
+        padding: 0em .5em
       }
 
       .homediv{
@@ -136,22 +159,36 @@
         }
       }
       
-      .custombtn{
+      .lgbtn{
         background-color: #fff;
         color: #BF3D3F;
-         border:1px solid #BF3D3F; 
+        border:1px solid #BF3D3F; 
         border-radius: 15px;
         min-width: 150px;
-        min-height:40px;
+        min-height:40px;   
       }
 
-      .custombtn:hover{
+
+      .lgbtn:hover{
         color: #fff;
         background-color: #BF3D3F;
         border:1px solid #fff; 
       }
 
+      .smbtn{
+        background-color: #fff;
+        color: #BF3D3F;
+        border:1px solid #BF3D3F; 
+        border-radius: 15px;
+/*        min-width: 50px;
+        height:25px;*/
+      }
 
+      .smbtn:hover{
+        color: #fff;
+        background-color: #BF3D3F;
+        border:1px solid #fff; 
+      }
       /*ABOUT PAGE*/
 
       .aboutcontainer{
@@ -188,6 +225,8 @@
           min-height: 15em;
         }
       }
+
+
 
       .aboutimg{
         width: 100%;
@@ -249,11 +288,6 @@
 
 
 
-      @media only screen and (max-width: 770px) {
-        .aboutdiv{
-          min-height: 15em;
-        }
-      }
 
 
       /*RECIPE PAGE   RECIPE PAGE    RECIPE PAGE    RECIPE PAGE     RECIPE PAGE    RECIPE PAGE  */
@@ -314,3 +348,62 @@
         }
       }
       
+
+      .show{
+          margin-top: 5em;
+          margin-bottom: 10em;
+          background-color: #fff;
+          padding: 0;
+          border:1px solid #696969;
+      }
+
+      .show > p{
+        padding: 0em 1em;
+      }
+
+      @media only screen and (max-width: 770px) {
+        .show{
+           margin: 0em;
+          padding: 0em 0em;
+       
+          background-color: #fff;
+        }
+      }
+
+
+        .credsdiv{
+        padding: 0;
+        background-color:#fff; 
+        border:1px solid #696969; 
+        border-style: solid solid solid solid;
+        margin-top: 5em
+     
+
+      }
+
+      @media only screen and (max-width: 770px) {
+        .credsdiv{
+          border-style: none;
+          min-height: 15em;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .formcontainer{
+        padding:5em 7em;
+        background-color: rgb(240,240,240);
+        margin-bottom: 50px;
+      }
+      @media only screen and (max-width: 770px) {
+        .formcontainer{
+          padding: 0em 1em;
+          margin-bottom: 0px;
+          background-color: #fff;
+        }
+      }
+      .errs{
+        color: red;
+      }
+
+

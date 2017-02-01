@@ -48,7 +48,8 @@ class PartsController extends Controller
      */
     public function show($id)
     {
-        //
+        $parts = Parts::findOrFail($id);
+        return view('parts.show', compact('parts'));
     }
 
     /**

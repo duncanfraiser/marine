@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Fleet;
+use App\Contact;
+use App\Mail\ContactUs;
 
-class FleetController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class FleetController extends Controller
      */
     public function index()
     {
-        //
+        return view('contact.index');
     }
 
     /**
@@ -23,7 +24,7 @@ class FleetController extends Controller
      */
     public function create()
     {
-        return view('fleet.create');
+        //
     }
 
     /**
@@ -34,9 +35,15 @@ class FleetController extends Controller
      */
     public function store(Request $request)
     {
-        $fleet = new Fleet;
-        $fleet->fill($request->all());
-        $fleet->save();
+        $contact = new Contact;
+        $contact->fill($request->all());
+
+        \Mail::to('duncan.fraiser@ergon.com')->send(new ContactUs);
+
+
+
+
+        $contact->save();
         return redirect('/');
     }
 
@@ -48,8 +55,7 @@ class FleetController extends Controller
      */
     public function show($id)
     {
-        $fleet = Fleet::findOrFail($id);
-        return view('fleet.show', compact('fleet'));
+        //
     }
 
     /**

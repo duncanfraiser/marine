@@ -5,15 +5,13 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class News extends Model
+class Contact extends Model
 {
 	use SoftDeletes;
 	protected $fillable = [
-   			'title',
-   			'show',
-   			'type',
-   			'excerpt',
-            'body',
-            'img'
+   			'name',
+            'email',
+            'subject',
+            'body'
     	    ];
 }

@@ -26,3 +26,4 @@ Route::resource('/parts', 'PartsController');
 Route::resource('/about', 'AboutController');
 Route::resource('/order', 'OrderController');
 Route::resource('/recipe', 'RecipeController');
+Route::resource('/contact', 'ContactController');

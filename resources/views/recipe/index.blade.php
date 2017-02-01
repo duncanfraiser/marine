@@ -20,7 +20,7 @@
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Soups/Salads</center></h3>
       @foreach($SoupsSalads as $soupsalad)
-    	<a href="{{url('/recipe/'.$soupsalad->id)}}">{{$soupsalad->title}}</a>
+    	<a href="{{url('/recipe/'.$soupsalad->id)}}">{{$soupsalad->title}}</a><br/>
       @endforeach
       </div>
     </div>
@@ -30,7 +30,7 @@
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Entrees</center></h3>
       @foreach($Entrees as $entree)
-    	<a href="{{url('/recipe/'.$entree->id)}}">{{$entree->title}}</a>
+    	<a href="{{url('/recipe/'.$entree->id)}}">{{$entree->title}}</a><br/>
       @endforeach
       </div>
     </div>
@@ -48,7 +48,7 @@
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Sides</center></h3>
       @foreach($Sides as $side)
-    	<a href="{{url('/recipe/'.$side->id)}}">{{$side->title}}</a>
+    	<a href="{{url('/recipe/'.$side->id)}}">{{$side->title}}</a><br/>
       @endforeach
       </div>
     </div>
@@ -58,7 +58,7 @@
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Desserts</center></h3>
       @foreach($Desserts as $dessert)
-    	<a href="{{url('/recipe/'.$dessert->id)}}">{{$dessert->title}}</a>
+    	<a href="{{url('/recipe/'.$dessert->id)}}">{{$dessert->title}}</a><br/>
       @endforeach
       </div>
     </div>
@@ -68,7 +68,7 @@
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Party Foods</center></h3>
       @foreach($PartyFoods as $partyfood)
-    	<a href="{{url('/recipe/'.$partyfood->id)}}">{{$partyfood->title}}</a>
+    	<a href="{{url('/recipe/'.$partyfood->id)}}">{{$partyfood->title}}</a><br/>
       @endforeach
       </div>
     </div>

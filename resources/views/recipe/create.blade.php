@@ -1,7 +1,9 @@
 @extends('layouts.template')
 @section('content')
 
-<div class="container-fluid" style="padding: 5em 10em">
+<div class="container-fluid formcontainer">
+    <div class="col-md-8 col-md-offset-2">
+      <div class='col-md-12 orderdiv' style="padding-bottom: 5em">
 <h1>Submit Recipe</h1>
 {{Form::open(['method' => 'POST', 'action' => 'RecipeController@store'])}}
 	<div class="form-group">
@@ -28,11 +30,13 @@
 		{{Form::textarea('body', null, ['class' => 'form-control'])}}
 	</div>
 <div class="form-group" style="float: right">
-     <button class="custombtn">Cancel<a href="/"></a></button>
-			{{Form::submit('Enter', ['class' => 'custombtn'])}}
+     <button class="lgbtn">Cancel<a href="/"></a></button>
+			{{Form::submit('Enter', ['class' => 'lgbtn'])}}
 </div>			
 
 {{Form::close()}}
+</div>
+</div>
 </div>
 
 @stop

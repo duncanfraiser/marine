@@ -7,6 +7,9 @@
     
       <div class='col-md-12 recipediv' style="border-style:solid;">
       <h3 style="margin: 0 0 10px 0; padding-top: 1em">{{$recipe->title}}</h3>
+            @if(\Auth::Check())
+      <a  href="{{url('/recipe/'.$recipe->id.'/edit')}}"><button class="smbtn">Edit</button></a>
+      @endif
       <p>{!!$recipe->body!!}</p>
       </div>
     </div>

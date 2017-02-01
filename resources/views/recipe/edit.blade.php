@@ -1,8 +1,9 @@
 @extends('layouts.template')
 @section('content')
-
-<div class="container-fluid" style="padding: 5em 10em">
-<h1>Submit Recipe</h1>
+<div class="container-fluid formcontainer">
+    <div class="col-md-8 col-md-offset-2">
+        <div class='col-md-12 orderdiv' style="padding-bottom: 5em">
+<h1>Edit Recipe</h1>
 {{Form::model($recipe, ['method' => 'PATCH', 'action' => ['RecipeController@update', $recipe->id]])}}
 	<div class="form-group">
 		{{Form::label('title', 'Recipe Title:')}}
@@ -28,13 +29,14 @@
 		{{Form::textarea('body', null, ['class' => 'form-control'])}}
 	</div>
 <div class="form-group" style="float: right">
-     <button class="custombtn">Cancel<a href="/"></a></button>
-			{{Form::submit('Enter', ['class' => 'custombtn'])}}
+     <button class="lgbtn">Cancel<a href="/"></a></button>
+			{{Form::submit('Update', ['class' => 'lgbtn'])}}
 </div>			
 
 {{Form::close()}}
 </div>
-
+</div>
+</div>
 @stop
 @section('scripts')
     @include('_includes.froala.froala-js')
