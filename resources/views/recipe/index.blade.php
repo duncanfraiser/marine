@@ -44,7 +44,7 @@
 <div class="row">
 
     <div class="col-md-4 text-center recipecol">
-      <img class="recipeimg" src="{{url('/banners/sides.png')}}">
+      <img class="recipeimg" src="{{url('/banners/Sides.png')}}">
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Sides</center></h3>
       @foreach($Sides as $side)
