@@ -38,7 +38,7 @@ class ContactController extends Controller
         $contact = new Contact;
         $contact->fill($request->all());
 
-        \Mail::to('duncan.fraiser@ergon.com')->send(new ContactUs);
+        // \Mail::to('duncan.fraiser@ergon.com')->send(new ContactUs);
 
 
 
