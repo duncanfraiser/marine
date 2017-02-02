@@ -38,7 +38,7 @@
 
                             <ul class="dropdown-menu" role="menu">
                             <li><a href="{{url('/news/create')}}">Add Article</a></li>
-                            <li><a href="{{'/recipe/create'}}">Add Redipe</a></li>
+                            <li><a href="{{'/recipe/create'}}">Add Recipe</a></li>
 
                                 <li>
                                     <a href="{{ url('/logout') }}"
