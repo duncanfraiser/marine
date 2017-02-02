@@ -8,6 +8,7 @@
       <div class='col-md-12 orderdiv' style="padding-bottom: 5em">
       <h2>Contact Us</h2>
       {{Form::open(['method' => 'POST', 'action' => 'ContactController@store'])}}
+       {{ csrf_field() }}
   <div class="form-group">
     {{Form::label('name', 'Name:')}}
     {{Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Enter Full Name'])}}
