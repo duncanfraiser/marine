@@ -5,7 +5,7 @@
       <div class="item active">
       <picture>
           <source media="(max-width: 770px)" srcset="{{url('/banners/mobile_banner_1.png')}}" width="100%">
-          <img src="{{url('/banners/boat.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+          <img src="{{url('/banners/Boat.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
       </picture>
       </div>
       <div class="item">
