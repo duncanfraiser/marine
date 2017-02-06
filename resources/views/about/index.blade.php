@@ -1,7 +1,10 @@
 @extends('layouts.template')
 @section('content')
    
-     <img  src="{{url('/banners/about-banner.jpg')}}" alt="Ergon Marine Industrial Supply" width="100%">
+      <picture>
+          <source media="(max-width: 770px)" srcset="{{url('/sliders/mobile-about.jpg')}}" width="100%">
+          <img src="{{url('/sliders/about.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+      </picture>
 <div class="container-fluid aboutcontainer" >
 
      <center><h1 style="font-weight: 300; padding: 0em 0em">“A strong business, a strong neighbor, a strong resource!”</h1></center>
