@@ -1,6 +1,9 @@
 @extends('layouts.template')
 @section('content')
-     <img  src="{{url('/banners/recipes_banner.png')}}" alt="Ergon Marine Industrial Supply" width="100%">
+      <picture>
+          <source media="(max-width: 770px)" srcset="{{url('/sliders/mobile-recipes.jpg')}}" width="100%">
+          <img src="{{url('/sliders/recipes.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+      </picture>
 
 <div class="container-fluid recipecontainer">
 <div class="row">

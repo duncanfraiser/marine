@@ -6,14 +6,14 @@
     <div class="carousel-inner" role="listbox">
       <div class="item active">
       <picture>
-          <source media="(max-width: 770px)" srcset="{{url('/banners/groceries-banner-mobile.jpg')}}" width="100%">
-          <img src="{{url('/banners/groceries-banner.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+          <source media="(max-width: 770px)" srcset="{{url('/sliders/mobile-groceries.jpg')}}" width="100%">
+          <img src="{{url('/sliders/groceries.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
       </picture>
       </div>
       <div class="item">
       <picture>
           <source media="(max-width: 770px)" srcset="{{url('/banners/parts-banner-mobile.jpg')}}" width="100%">
-          <img src="{{url('/banners/parts-banner.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+          <img src="{{url('/sliders/parts.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
       </picture>
       </div>
     </div>

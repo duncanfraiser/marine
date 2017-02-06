@@ -4,26 +4,26 @@
     <div class="carousel-inner" role="listbox">
       <div class="item active">
       <picture>
-          <source media="(max-width: 770px)" srcset="{{url('/banners/mobile_banner_1.png')}}" width="100%">
-          <img src="{{url('/banners/Boat.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+          <source media="(max-width: 770px)" srcset="{{url('/sliders/mobile-always-ready.jpg')}}" width="100%">
+          <img src="{{url('/sliders/always-ready.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
       </picture>
       </div>
       <div class="item">
       <picture>
-          <source media="(max-width: 770px)" srcset="{{url('/banners/mobile_banner_2.png')}}" width="100%">
-          <img src="{{url('/banners/banner_2.png')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+          <source media="(max-width: 770px)" srcset="{{url('/sliders/mobile-crew-changes.jpg')}}" width="100%">
+          <img src="{{url('/sliders/crew-changes.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
       </picture>
       </div>
       <div class="item">
       <picture>
-          <source media="(max-width: 770px)" srcset="{{url('/banners/mobile_banner_3.png')}}" width="100%">
-          <img src="{{url('/banners/banner_3.png')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+          <source media="(max-width: 770px)" srcset="{{url('/sliders/mobile-delivers.jpg')}}" width="100%">
+          <img src="{{url('/sliders/delivers.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
       </picture>
       </div>
       <div class="item">
       <picture>
-          <source media="(max-width: 770px)" srcset="{{url('/banners/mobile_banner_4.png')}}" width="100%">
-          <img src="{{url('/banners/banner_4.png')}}"  width="100%" alt="Ergon Marine Industrial Supply">
+          <source media="(max-width: 770px)" srcset="{{url('/sliders/mobile-meat.jpg')}}" width="100%">
+          <img src="{{url('/sliders/meat.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
       </picture>
       </div>
     </div>
