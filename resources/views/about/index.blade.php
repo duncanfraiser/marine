@@ -11,14 +11,14 @@
 
   <div class="row">
     <div class="col-md-6 aboutcol">
-      <img class="aboutimg" src="{{url('/banners/AboutService.png')}}">
+      <img class="aboutimg" src="{{url('/sliders/AboutService.png')}}">
       <div class='col-md-12 aboutdiv'>
       <h3><center><strong>SERVICE</strong></center></h3>
       <p>Ergon Marine & Industrial Supply – Vicksburg employs 61 people and a fleet of seven towboats to provide mid-river fleet servicing 24 hours a day of groceries, fuel, equipment, supplies, crew changes, etc., to commercial vessels navigating the Mississippi River. EMIS is the only mid-stream fueler and harbor service in the industry involved in strategic planning and management calls of the Lower Mississippi River.</p>
       </div>
     </div>
     <div class="col-md-6 aboutcol">
-      <img class="aboutimg" src="{{url('/banners/AboutAdvanced.png')}}">
+      <img class="aboutimg" src="{{url('/sliders/AboutAdvanced.png')}}">
       <div class='col-md-12 aboutdiv'>
       <h3><center><strong>ADVANCED MONITORING <br/>& COMMUNICATION SYSTEM</strong></center></h3>
       <p>Sophisticated computer systems such as AIS and VIC allow EMIS to monitor traffic and movement, and communicate with vessels on the river. Automatic Identification System (AIS) is a tracking system which supplements marine radar, providing Vehicle Traffic Services like EMIS the identification position, course, speed, destination, and other specifics of each vessel, displayed on computer screens. Vicksburg Information Center (VIC) allows EMIS to speak with boat personnel in managing their needs and services.</p>
@@ -28,7 +28,7 @@
 
   <div class="row">
     <div class="col-md-6 aboutcol">
-      <img class="aboutimg" src="{{url('/banners/AboutEmergency.png')}}">
+      <img class="aboutimg" src="{{url('/sliders/AboutEmergency.png')}}">
       <div class='col-md-12 aboutdiv' style="min-height: 30em">
       <h3><center><strong>EMERGENCY RESPONSE<br/> & SAFETY</strong></center></h3>
       <p>Assisting the Port of Vicksburg’s U.S. Coast Guard Maintenance Operations team in human rescue, recovery and property salvage projects, EMIS personnel serve as “first responders” of the river. They help to ensure safety of passengers and recovery of commercial river vessels when navigation goes awry. Over the years, EMIS has developed good working relationships with entities including Vicksburg emergency response teams, and other city and county officials; the U.S. Army Corps of Engineers; U.S. Coast Guard; Department of Homeland Security; and even the FBI.</p>
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="col-md-6 aboutcol">
-      <img class="aboutimg" src="{{url('/banners/AboutHistory.png')}}">
+      <img class="aboutimg" src="{{url('/sliders/AboutHistory.png')}}">
       <div class='col-md-12 aboutdiv' style="min-height: 30em">
       <h3><center><strong>OUR HISTORY</strong></center></h3>
       <p>Ergon Marine & Industrial Supply, Inc., was founded in 1969 as the Ergon General Store, providing support in the form of groceries and other supplies
