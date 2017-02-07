@@ -21,7 +21,7 @@
       <img class="aboutimg" src="{{url('/sliders/AboutAdvanced.png')}}">
       <div class='col-md-12 aboutdiv'>
       <h3><center><strong>ADVANCED MONITORING <br/>& COMMUNICATION SYSTEM</strong></center></h3>
-      <p>Sophisticated computer systems such as AIS and VIC allow EMIS to monitor traffic and movement, and communicate with vessels on the river. Automatic Identification System (AIS) is a tracking system which supplements marine radar, providing Vehicle Traffic Services like EMIS the identification position, course, speed, destination, and other specifics of each vessel, displayed on computer screens. Vicksburg Information Center (VIC) allows EMIS to speak with boat personnel in managing their needs and services.</p>
+      <p>Sophisticated computer systems such as AIS and VIC allow EMIS to monitor traffic and movement, and communicate with vessels on the river. Automatic Identification System (AIS) is a tracking system which supplements marine radar, providing Vehicle Traffic Services like EMIS the identification position, course, speed, destination, and other specifics of each vessel, displayed on computer screens. Vicksburg Information Center (VIC) allows EMIS to speak with boat personnel in managing their needs and services. test</p>
       </div>
     </div>
   </div>
