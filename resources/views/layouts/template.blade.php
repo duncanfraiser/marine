@@ -12,7 +12,7 @@
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}?1">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}?3">
 
       @include('_includes.froala.froala-css')
 

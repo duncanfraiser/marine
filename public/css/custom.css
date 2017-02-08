@@ -131,8 +131,8 @@
       .homediv{
         padding: 0em 2em 2em 2em;
         background-color:#fff; 
-        border:1px solid #696969; 
-        border-style: none solid solid solid;
+/*        border:1px solid #696969; */
+/*        border-style: none solid solid solid;*/
         min-height: 30em;
       }
 
@@ -149,7 +149,7 @@
         width: 100%;
         margin-top: 1em;
         border:1px solid #696969;
-        border-style: solid solid none solid;
+        border-style: solid solid solid solid;
 
       }
       @media only screen and (max-width: 770px) {
@@ -214,8 +214,8 @@
       .aboutdiv{
         padding: 1em 2em 2em 2em;
         background-color:#fff; 
-        border:1px solid #696969; 
-        border-style: none solid solid solid;
+/*        border:1px solid #696969; 
+        border-style: none solid solid solid;*/
         min-height: 20em;
       }
 
@@ -232,7 +232,7 @@
         width: 100%;
         margin-top: 2em;
         border:1px solid #696969;
-        border-style: solid solid none solid;
+        border-style: solid;
 
       }
        @media only screen and (max-width: 770px) {
@@ -320,8 +320,8 @@
       .recipediv{
         padding: 0em 2em 2em 2em;
         background-color:#fff; 
-        border:1px solid #696969; 
-        border-style: none solid solid solid;
+/*        border:1px solid #696969; 
+        border-style: none solid solid solid;*/
         min-height: 20em;
       }
 
@@ -338,7 +338,7 @@
         width: 100%;
         margin-top: 1em;
         border:1px solid #696969;
-        border-style: solid solid none solid;
+        border-style:solid;
 
       }
       @media only screen and (max-width: 770px) {
