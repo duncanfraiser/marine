@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><img src="{{url('/img/logo3.png')}}"></a>
+      <a class="navbar-brand" href="{{url('/')}}"><img src="{{url('/img/logo3.png')}}"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -17,17 +17,14 @@
         <li><a href="{{url('/recipe')}}">RECIPES</a></li>
            <li><a href="{{url('/about')}}">ABOUT</a></li>
         <li><a href="{{url('/contact')}}">CONTACT</a></li>
-                <li><a target="blank" href="http://forecast.weather.gov/product.php?site=NWS&issuedby=ORN&product=RVA&format=txt&version=1&glossary=0">RIVER STAGES</a></li>
-     
-  
-
+                <li><a href="{{url('/river')}}">RIVER STAGES</a></li>
 
                 <!-- Right Side Of Navbar -->
            
                     <!-- Authentication Links -->
                     @if (Auth::guest())
 
-                        <li"><a href="{{ url('/login') }}"><img class="navimg" src="{{url('img/boatwheel.png')}}"></a></li>
+                        <li class="linavimg"><a style="padding-top: 0px; padding-bottom: 0px;" href="{{ url('/login') }}"><img class="navimg" src="{{url('img/boatwheel.png')}}"></a></li>
 {{--                         <li><a href="{{ url('/register') }}">Register</a></li> --}}
                     @else
                         <li class="dropdown">

@@ -12,7 +12,7 @@
       </div>
       <div class="item">
       <picture>
-          <source media="(max-width: 770px)" srcset="{{url('/banners/parts-banner-mobile.jpg')}}" width="100%">
+          <source media="(max-width: 770px)" srcset="{{url('/sliders/mobile-parts.jpg')}}" width="100%">
           <img src="{{url('/sliders/parts.jpg')}}"  width="100%" alt="Ergon Marine Industrial Supply">
       </picture>
       </div>
