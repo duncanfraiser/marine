@@ -229,6 +229,31 @@
         background-color: #BF3D3F;
         border:1px solid #fff; 
       }
+
+      .formbtn{
+        background-color: #fff;
+        color: #BF3D3F;
+        border:1px solid #BF3D3F; 
+        border-radius: 15px;
+        min-width: 150px;
+        min-height:40px;   
+      }
+
+
+      .formbtn:hover{
+        color: #fff;
+        background-color: #BF3D3F;
+        border:1px solid #fff; 
+      }
+
+      @media only screen and (max-width: 770px) {
+        .formbtn{
+        min-width: 75px;
+        min-height:40px;   
+        }
+      }
+
+
       /*ABOUT PAGE*/
 
       .aboutcontainer{

@@ -23,8 +23,8 @@
         {{Form::textarea('body', null, ['class' => 'form-control', 'placeholder' => 'Enter Message'])}}
       </div>
       <div class="form-group" style="float: right">
-        <button class="lgbtn">Cancel<a href="/"></a></button>
-        {{Form::submit('Enter', ['class' => 'lgbtn'])}}
+        <button class="formbtn">Cancel<a href="/"></a></button>
+        {{Form::submit('Enter', ['class' => 'formbtn'])}}
       </div>      
       {{Form::close()}}
   </div>
