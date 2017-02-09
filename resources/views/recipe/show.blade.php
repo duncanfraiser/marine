@@ -5,7 +5,7 @@
 
     <div class="col-md-6 col-md-offset-3 recipecol">
     
-      <div class='col-md-12 recipediv' style="border-style:solid;">
+      <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em">{{$recipe->title}}</h3>
             @if(\Auth::Check())
       <a  href="{{url('/recipe/'.$recipe->id.'/edit')}}"><button class="smbtn">Edit</button></a>
