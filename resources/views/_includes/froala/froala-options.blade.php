@@ -2,7 +2,7 @@
     // Replace the <textarea id="body"> with a Froala
     // instance, using default configuration.
     // removed options from the toolbar----'insertImage', 'insertVideo', 'insertFile',
-    $('#body, #excerpt').froalaEditor({
+    $('#body, #excerpt, #credit').froalaEditor({
       toolbarButtons: ['undo', 'redo', 'html', '-', 'fontSize', 'paragraphFormat', 'align', 'quote', '|', 'formatOL', 'formatUL', '|', 'bold', 'italic', 'underline', '|', 'insertLink',  'insertTable'],
       heightMin: 300,
       imageMove: true,

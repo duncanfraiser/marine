@@ -22,10 +22,11 @@
 		{{Form::textarea('body', null, ['class' => 'form-control'])}}
 	</div>
 
-<div class="form-group" style="float: right">
-     <button class="lgbtn">Cancel<a href="/"></a></button>
-	{{Form::submit('Update', ['class' => 'lgbtn'])}}
-</div>			
+	<div class="form-group" style="float: right">
+	  {{Form::submit('Enter', ['class' => 'lgbtn'])}}
+	</div>			
+{{Form::close()}}
+    <a style="float: right; margin-right: .5em" href="{{ URL('/') }}"><button class="lgbtn">Cancel</button></a>		
 
 		{{Form::close()}}
        	<div class="form-group">
