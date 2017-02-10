@@ -6,6 +6,12 @@ use App\Recipe;
 
 class RecipeController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('user')->except('index', 'show');
+    }
+
+
     /**
      * Display a listing of the resource.
      *

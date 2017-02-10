@@ -6,11 +6,13 @@
       </picture>
   <div class="container-fluid recipecontainer">
     <div class="col-md-6 col-md-offset-3 recipecol">
-      <div class='col-md-12 recipediv' style="border:1px solid #696969;">
-        <h3 style="margin: 0 0 10px 0; padding-top: 1em">{{$recipe->title}}</h3>
-        @if(\Auth::Check())
-          <a  href="{{url('/recipe/'.$recipe->id.'/edit')}}"><button class="smbtn">Edit</button></a>
+      <div class='col-md-12 recipediv' style="border:1px solid #696969; padding-top: 1em">
+      <div>
+        @if(\Auth::Check() && \Auth::user()->role == 'user' || \Auth::Check() && \Auth::user()->role == 'admin')
+          <a  href="{{url('/recipe/'.$recipe->id.'/edit')}}"><button class="editbtn">Edit</button></a>
         @endif
+        <h3 style="margin: 0 0 10px 0; padding-top: 1em">{{$recipe->title}}</h3>
+        </div>
         <p>{!!$recipe->body!!}</p>
         @if($recipe->img != "")
         <img style="height: 5em" src="{{asset('storage/img/'.$recipe->img)}}">

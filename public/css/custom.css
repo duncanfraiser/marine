@@ -220,11 +220,25 @@
         color: #BF3D3F;
         border:1px solid #BF3D3F; 
         border-radius: 15px;
-/*        min-width: 50px;
-        height:25px;*/
+        font-size: 14px;
       }
 
       .smbtn:hover{
+        color: #fff;
+        background-color: #BF3D3F;
+        border:1px solid #fff; 
+      }
+      
+      .editbtn{
+        background-color: #fff;
+        color: #BF3D3F;
+        border:1px solid #BF3D3F; 
+        border-radius: 15px;
+        font-size: 14px;
+        float: right;
+      }
+
+      .editbtn:hover{
         color: #fff;
         background-color: #BF3D3F;
         border:1px solid #fff; 

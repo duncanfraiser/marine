@@ -7,10 +7,11 @@
       <img width="100%"  src="{{url('storage/img/'.$news->img)}}">
       </div>
       <div style="padding: 1em">
-      <h4>{{$news->title}}</h4>
-      @if(\Auth::Check())
-      <a  href="{{url('/news/'.$news->id.'/edit')}}"><button class="smbtn">Edit</button></a>
+            @if(\Auth::Check())
+      <a href="{{url('/news/'.$news->id.'/edit')}}"><button class="editbtn">Edit</button></a>
       @endif
+      <h4>{{$news->title}}</h4>
+
       <p>{!!$news->body!!}</p>
       </div>
       </div>
