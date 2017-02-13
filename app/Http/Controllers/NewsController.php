@@ -7,11 +7,9 @@ use App\News;
 class NewsController extends Controller
 {
 
-        public function __construct()
-    {
-        $this->middleware('auth')->only('create', 'edit');
+    public function __construct(){
+        $this->middleware('user')->except('index', 'show');
     }
-
 
 
     /**

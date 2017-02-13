@@ -6,6 +6,9 @@ use App\Parts;
 
 class PartsController extends Controller
 {
+        public function __construct(){
+        $this->middleware('admin')->except('index', 'show');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -60,7 +63,8 @@ class PartsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $parts=Parts::findOrFail($id);
+        return view('parts.edit',compact('parts'));
     }
 
     /**
@@ -72,7 +76,17 @@ class PartsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $parts = Parts::findOrFail($id);
+        if($request->img != ""){
+        $pic = request()->file('img');
+        $pic->storeAs('public/img', $pic->getClientOriginalName());
+        $parts->img = $pic->getClientOriginalName();
+        }
+        $parts->title = $request->title;
+        $parts->body = $request->body;
+        $parts->save();
+
+        return redirect('/');
     }
 
     /**

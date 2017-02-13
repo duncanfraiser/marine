@@ -198,22 +198,18 @@
           border-style: none;
         }
       }
-      
-      .lgbtn{
-        background-color: #fff;
-        color: #BF3D3F;
-        border:1px solid #BF3D3F; 
-        border-radius: 15px;
-        min-width: 150px;
-        min-height:40px;   
+
+      #hometitle {
+        margin: auto;
+        text-align: center;
       }
 
-
-      .lgbtn:hover{
-        color: #fff;
-        background-color: #BF3D3F;
-        border:1px solid #fff; 
+      #homeedit {
+        position: absolute;
+        top: .5em;
+        right: .75em;
       }
+
 
       .smbtn{
         background-color: #fff;
@@ -266,6 +262,14 @@
         min-height:40px;   
         }
       }
+
+        .homeedit{
+          /* The Magic Float Center Code */
+          float: right;
+          position: relative;
+          left: -46%; /* or right 50% */
+          text-align: left;
+        }
 
 
       /*ABOUT PAGE*/
@@ -376,6 +380,8 @@
         background-color: rgb(240,240,240);
         margin-bottom: 50px;
       }
+
+      
       @media only screen and (max-width: 770px) {
         .recipecontainer{
           padding: 0em 0em;
@@ -400,8 +406,6 @@
       .recipediv{
         padding: 0em 2em 2em 2em;
         background-color:#fff; 
-/*        border:1px solid #696969; 
-        border-style: none solid solid solid;*/
         min-height: 20em;
       }
 
@@ -421,6 +425,7 @@
         border-style:solid;
 
       }
+
       @media only screen and (max-width: 770px) {
         .recipeimg{
           margin-top: 0em;
@@ -457,9 +462,7 @@
         border:1px solid #696969; 
         border-style: solid solid solid solid;
         margin-top: 5em
-     
-
-      }
+        }
 
       @media only screen and (max-width: 770px) {
         .credsdiv{
@@ -497,3 +500,5 @@
           margin: 0px;
         }
       }
+
+

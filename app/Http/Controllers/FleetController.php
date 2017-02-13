@@ -6,6 +6,9 @@ use App\Fleet;
 
 class FleetController extends Controller
 {
+    public function __construct(){
+        $this->middleware('admin')->except('index', 'show');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -60,7 +63,8 @@ class FleetController extends Controller
      */
     public function edit($id)
     {
-        //
+        $fleet=Fleet::findOrFail($id);
+        return view('fleet.edit',compact('fleet'));
     }
 
     /**
@@ -72,7 +76,17 @@ class FleetController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $fleet = Fleet::findOrFail($id);
+        if($request->img != ""){
+        $pic = request()->file('img');
+        $pic->storeAs('public/img', $pic->getClientOriginalName());
+        $fleet->img = $pic->getClientOriginalName();
+        }
+        $fleet->title = $request->title;
+        $fleet->body = $request->body;
+        $fleet->save();
+
+        return redirect('/');
     }
 
     /**

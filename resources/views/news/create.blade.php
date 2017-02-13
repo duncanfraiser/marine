@@ -48,10 +48,10 @@
 		{{Form::textarea('body', null, ['class' => 'form-control'])}}
 	</div>
 	<div class="form-group" style="float: right">
-	  {{Form::submit('Enter', ['class' => 'lgbtn'])}}
+	  {{Form::submit('Enter', ['class' => 'formbtn'])}}
 	</div>			
 {{Form::close()}}
-    <a style="float: right; margin-right: .5em" href="{{ URL('/') }}"><button class="lgbtn">Cancel</button></a>
+    <a style="float: right; margin-right: .5em" href="{{ URL('/') }}"><button class="formbtn">Cancel</button></a>
 </div>
 </div>
 </div>

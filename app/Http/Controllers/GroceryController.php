@@ -6,6 +6,9 @@ use App\Grocery;
 
 class GroceryController extends Controller
 {
+    public function __construct(){
+        $this->middleware('admin')->except('index', 'show');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -60,7 +63,8 @@ class GroceryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $grocery=Grocery::findOrFail($id);
+        return view('grocery.edit',compact('grocery'));
     }
 
     /**
@@ -72,7 +76,17 @@ class GroceryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $grocery = Grocery::findOrFail($id);
+        if($request->img != ""){
+        $pic = request()->file('img');
+        $pic->storeAs('public/img', $pic->getClientOriginalName());
+        $grocery->img = $pic->getClientOriginalName();
+        }
+        $grocery->title = $request->title;
+        $grocery->body = $request->body;
+        $grocery->save();
+
+        return redirect('/');
     }
 
     /**

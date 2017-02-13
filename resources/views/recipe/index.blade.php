@@ -9,7 +9,7 @@
 <div class="row">
 
     <div class="col-md-4 text-center recipecol">
-      <img class="recipeimg" src="{{url('/banners/Appetizers.png')}}">
+      <img class="recipeimg" src="{{asset('storage/img/Appetizers.png')}}">
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em">Appetizers</h3>
       @foreach($Appetizers as $appetizer)
@@ -19,7 +19,7 @@
     </div>
 
     <div class="col-md-4 text-center recipecol">
-      <img class="recipeimg" src="{{url('/banners/SoupsSalads.png')}}">
+      <img class="recipeimg" src="{{asset('storage/img/SoupsSalads.png')}}">
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Soups/Salads</center></h3>
       @foreach($SoupsSalads as $soupsalad)
@@ -29,7 +29,7 @@
     </div>
 
     <div class="col-md-4 text-center recipecol">
-      <img class="recipeimg" src="{{url('/banners/Entrees.png')}}">
+      <img class="recipeimg" src="{{asset('storage/img/Entrees.png')}}">
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Entrees</center></h3>
       @foreach($Entrees as $entree)
@@ -47,7 +47,7 @@
 <div class="row">
 
     <div class="col-md-4 text-center recipecol">
-      <img class="recipeimg" src="{{url('/banners/Sides.png')}}">
+      <img class="recipeimg" src="{{asset('storage/img/Sides.png')}}">
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Sides</center></h3>
       @foreach($Sides as $side)
@@ -57,7 +57,7 @@
     </div>
 
     <div class="col-md-4 text-center recipecol">
-      <img class="recipeimg" src="{{url('/banners/Desserts.png')}}">
+      <img class="recipeimg" src="{{asset('storage/img/Desserts.png')}}">
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Desserts</center></h3>
       @foreach($Desserts as $dessert)
@@ -67,7 +67,7 @@
     </div>
 
     <div class="col-md-4 text-center recipecol">
-      <img class="recipeimg" src="{{url('/banners/PartyFoods.png')}}">
+      <img class="recipeimg" src="{{asset('storage/img/PartyFoods.png')}}">
       <div class='col-md-12 recipediv'>
       <h3 style="margin: 0 0 10px 0; padding-top: 1em"><center>Party Foods</center></h3>
       @foreach($PartyFoods as $partyfood)

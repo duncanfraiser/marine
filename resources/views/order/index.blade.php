@@ -38,7 +38,7 @@
       <p>Click on the button below.<br/>
       Print the form or fill it out on the screen.<br/>
       Email to <a href="mailto:{{ 'vbemisbiller@ergon.com' }}">vbemisbiller@ergon.com</a><br/>or fax to 601-636-6173.</p>
-      <a  href="{{url('/files/myOrder.xls')}}"><button class="lgbtn">Grocery Order Form</button></a>
+      <a href="{{url('/files/myOrder.xls')}}"><button class="formbtn">Grocery Order Form</button></a>
       </div>
     </div>
     <div class="col-md-6 text-center ordercol">
@@ -48,7 +48,7 @@
       <p>Click on the button below.<br/>
       Print the form or fill it out on the screen.<br/>
       Email to <a href="mailto:{{ 'wayne.speights@ergon.com' }}">wayne.speights@ergon.com</a><br/>or fax to 601-636-6173.</p>
-      <a  href="{{url('/files/myParts.xls')}}"><button class="lgbtn">Parts Order Form</button></a>
+      <a  href="{{url('/files/myParts.xls')}}"><button class="formbtn">Parts Order Form</button></a>
       </div>
     </div>
 
