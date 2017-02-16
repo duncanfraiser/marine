@@ -14,7 +14,7 @@
         <h3 style="margin: 0 0 10px 0; padding-top: 1em">{{$recipe->title}}</h3>
         </div>
         <p>{!!$recipe->body!!}</p>
-        <div style="background-color: #000; height: 1px; width:50%"></div>
+        <div style="background-color: #000; height: 1px; width:50%; margin-bottom: 1em"></div>
         @if($recipe->img != "")
         <img style="height: 5em" src="{{asset('storage/img/'.$recipe->img)}}">
         @endif
