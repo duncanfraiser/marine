@@ -26,6 +26,7 @@ Route::resource('/parts', 'PartsController');
 Route::resource('/about', 'AboutController');
 Route::resource('/order', 'OrderController');
 Route::resource('/recipe', 'RecipeController');
+Route::get('/recipe/{id}/picture', 'RecipeController@picture');
 Route::resource('/contact', 'ContactController');
 Route::get('/river', 'RiverController@index');
 

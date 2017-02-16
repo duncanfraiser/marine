@@ -126,4 +126,15 @@ class RecipeController extends Controller
         $recipe->delete();
         return redirect('/recipe');
     }
+
+    public function picture($id)
+    {
+        $recipe = Recipe::FindOrFail($id);
+        return view('recipe.picture', compact('recipe'));
+    }
+
+
+
+
+
 }
