@@ -28,3 +28,12 @@ Route::resource('/order', 'OrderController');
 Route::resource('/recipe', 'RecipeController');
 Route::resource('/contact', 'ContactController');
 Route::get('/river', 'RiverController@index');
+
+Route::get('/sparkpost', function () {
+  Mail::send('emails.test', [], function ($message) {
+    $message
+      ->from('postmaster@ergon.com', 'Elvis Presley')
+      ->to('duncan.fraiser@ergon.com', 'Darth Dunk')
+      ->subject('From SparkPost with ❤');
+  });
+});
