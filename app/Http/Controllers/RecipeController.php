@@ -8,7 +8,7 @@ class RecipeController extends Controller
 {
 
     public function __construct(){
-        $this->middleware('user')->except('index', 'show');
+        $this->middleware('user')->except('index', 'show', 'picture');
     }
 
 
