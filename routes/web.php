@@ -29,6 +29,8 @@ Route::resource('/recipe', 'RecipeController');
 Route::get('/recipe/{id}/picture', 'RecipeController@picture');
 Route::resource('/contact', 'ContactController');
 Route::get('/river', 'RiverController@index');
+Route::resource('/submission', 'SubmissionController');
+Route::get('/submission/{id}/thanks', 'SubmissionController@thanks');
 
 Route::get('/sparkpost', function () {
   Mail::send('emails.test', [], function ($message) {

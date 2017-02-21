@@ -38,9 +38,10 @@
 
 			.navbar-inverse .navbar-nav > li > a:hover,
 			.navbar-inverse .navbar-nav > li > a:focus {
-			  font-size: 120%;
-  		  color: #fff;
-  		  background-color: transparent;
+			  font-size: 100%;
+/*        font-weight: 900;*/
+  		  color: rgb(250,203,34);
+  	/*	  background-color: #BF3D3F;*/
 			}
 
       .navimg{
@@ -433,6 +434,28 @@
         }
       }
       
+      .submissiondiv{
+        color: #fff;
+        background-color: rgb(98, 125, 20);
+        min-height: 3em;
+      }
+
+      .subbtn{
+        color: #fff;
+        background-color: #BF3D3F;
+        border:1px solid #fff; 
+        border-radius: 13px;
+        font-size: 14px;
+
+        padding: .25em 1em;
+        margin-right: .25em;
+      }
+
+      .subbtn:hover{
+        background-color: #fff;
+        color: #BF3D3F;
+        border:1px solid #BF3D3F; 
+      }
 
       .show{
           margin-top: 5em;

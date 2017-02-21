@@ -80,6 +80,8 @@
 
 </div>
 
+<div class="submissiondiv text-center"> <p style="padding: .5em; font-size: 1.25em" ><a href="{{ URL('/submission/create') }}"><button class="subbtn">Click here</button></a> to submit your favorite recipe to be featured on our site.</p></div>
+
 
 
 
