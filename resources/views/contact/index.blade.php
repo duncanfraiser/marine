@@ -1,7 +1,7 @@
 @extends('layouts.template')
 @section('content')
 <div class="container-fluid ordercontainer" >
-<div class="col-md-8 col-md-offset-2 ordercol">
+<div class="col-md-8 col-md-offset-2 contactcol">
   <div class='col-md-12 orderdiv' style="padding-bottom: 5em">
       <h2>Contact Us</h2>
       {{Form::open(['method' => 'POST', 'action' => 'ContactController@store'])}}

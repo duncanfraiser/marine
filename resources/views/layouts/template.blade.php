@@ -28,6 +28,7 @@
         })();
     </script>
     <!-- End Piwik Code -->
+    @yield('styles')
   </head>
   <body>
     @include('_includes.nav')

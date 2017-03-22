@@ -6,7 +6,7 @@
       </picture>
   <div class="container-fluid recipecontainer">
     <div class="col-md-6 col-md-offset-3 recipecol">
-      <div class='col-md-12 recipediv' style="border:1px solid #696969; padding-top: 1em">
+      <div class='col-md-12 recipediv' padding-top: 1em">
       <div>
 
         <h3 style="margin: 0 0 10px 0; padding-top: 1em">{{$recipe->title}}</h3>
