@@ -1,69 +1,84 @@
 @extends('layouts.template')
 @section('content')
 @include('_includes.carousel')
-<div class="container-fluid homecontainer">
 
-  <div class="row">
-    <div class="col-md-3 homecol">
-      <img class="homeimg" src="{{asset('storage/img/'.$grocery->img)}}">
-      <div class='col-md-12 homediv'>
-        <div id="hometitle">
-          <a class="homelinks" href="{{url('/grocery/'.$grocery->id)}}"><h3 class="homeh3"><strong>{{$grocery->title}}</strong> </h3></a>
-        </div>
+<div class="container-fluid">
+  <div class="container" style="margin-top: 40px; margin-bottom: 20px; padding: 0px">
+  
+    <div class="col-md-4">
         @if(\Auth::check() && \Auth::user()->role == "admin")
           <div id="homeedit">
             <a href="{{url('/grocery/'.$grocery->id.'/edit')}}"><button class="editbtn">Edit</button></a>
           </div>
         @endif
-        <p>{!!$grocery->body!!}</p>
-        <center><a href="{{url('/order')}}"><button class="smbtn">Start Shopping</button></a></center>
-      </div>
+  
+      <img class="landimg" src="{{asset('storage/img/'.$grocery->img)}}">
+      <div style="color: #fff; background-color: #312B33;"><center><h4 style="margin: 0px; padding: 5px 5px">{{$grocery->header}}</h4></center></div>
+      <a href="{{url('/grocery/'.$grocery->id)}}"><h4>{{$grocery->title}}</h4></a>
+      <p>{!!$grocery->excerpt!!}</p>
     </div>
-    <div class="col-md-3 homecol">
-      <img class="homeimg" src="{{asset('storage/img/'.$parts->img)}}">
-      <div class='col-md-12 homediv'>
-        <div id="hometitle">
-          <a class="homelinks" href="{{url('/parts/'.$parts->id)}}"><h3 class="homeh3"><center><strong>{{$parts->title}}</strong></center></h3></a>
-        </div>
+
+
+
+    <div class="col-md-4">
         @if(\Auth::check() && \Auth::user()->role == "admin")
           <div id="homeedit">
             <a href="{{url('/parts/'.$parts->id.'/edit')}}"><button class="editbtn">Edit</button></a>
           </div>
         @endif
-        <p>{!!$parts->body!!}</p>
-        <center><a href="{{url('/order')}}"><button class="smbtn">Start Shopping</button></a></center>
-      </div>
+      <img class="landimg" src="{{asset('storage/img/'.$parts->img)}}">
+      <div style="color: #fff; background-color: #312B33;"><center><h4 style="margin: 0px; padding: 5px 5px">{{$parts->header}}</h4></center></div>
+      <a href="{{url('/parts/'.$parts->id)}}"><h4>{{$parts->title}}</h4></a>
+      <p>{!!$parts->excerpt!!}</p>
     </div>
-    <div class="col-md-3 homecol">
-      <img class="homeimg" src="{{asset('storage/img/'.$fleet->img)}}">
-      <div class='col-md-12 homediv'>
-        <div id="hometitle">
-          <a class="homelinks" href="{{url('/fleet/'.$fleet->id)}}"><h3 class="homeh3"><center><strong>{{$fleet->title}}</strong></center></h3></a>
-        </div>
+    
+
+
+
+
+
+
+    <div class="col-md-4">
         @if(\Auth::check() && \Auth::user()->role == "admin")
           <div id="homeedit">
             <a href="{{url('/fleet/'.$fleet->id.'/edit')}}"><button class="editbtn">Edit</button></a>
           </div>
         @endif
-        <p>{!!$fleet->body!!}</p>
-      </div>
+     
+      <img class="landimg" src="{{asset('storage/img/'.$fleet->img)}}">
+
+       <div style="color: #fff; background-color: #312B33;"><center><h4 style="margin: 0px; padding: 5px 5px">{{$fleet->header}}</h4></center></div>
+
+
+      <a href="{{url('/fleet/'.$fleet->id)}}"><h4>{{$fleet->title}}</h4></a>
+      <p>{!!$fleet->excerpt!!}</p>
     </div>
-    <div class="col-md-3 homecol">
-      <img class="homeimg" src="{{asset('storage/img/'.$news->img)}}">
-      <div class='col-md-12 homediv'>
-        <div id="hometitle">
-           <a class="homelinks" href="{{url('/news/'.$news->id)}}"><h3 class="homeh3"><center><strong>News</strong></center></h3></a>
-       <h3 style="text-align: center; margin-top: 0"><strong><span style="font-size: 18px;">{{$news->title}}</span></strong></h3>
-      {!!$news->excerpt!!}
-            <center><a href="{{url('/news/'.$news->id)}}"><button class="smbtn">Read More</button></a></center>
-        </div>
-        @if(\Auth::check() && \Auth::user()->role == "admin" || \Auth::check() && \Auth::user()->role == "user")
+  
+  </div>
+  
+
+
+<div class="container-fluid" style="background-color: #E5E5E5;">
+  <div class="container" style=" margin-top: 40px; margin-bottom: 20px; padding: 0px">
+  @foreach($news as $new)
+    <div class="col-md-4">
+          @if(\Auth::check() && \Auth::user()->role == "admin" || \Auth::check() && \Auth::user()->role == "user")
           <div id="homeedit">
-            <a href="{{url('/news/'.$news->id.'/edit')}}"><button class="editbtn">Edit</button></a>
+            <a href="{{url('/news/'.$new->id.'/edit')}}"><button class="editbtn">Edit</button></a>
           </div>
         @endif
-      </div>
+      <img class="landimg" src="{{asset('storage/img/'.$new->img)}}">
+      <div style="color: #fff; background-color: #312B33;"><center><h4 style="margin: 0px; padding: 5px 5px">{{$new->type}}</h4></center></div>
+      <a href="{{url('/news/'.$new->id)}}"><h4>{{$new->title}}</h4></a>
+      <p>{!!$new->excerpt!!}</p>
     </div>
+@endforeach
+  
   </div>
+  
+</div>
+
+
+
 </div>
 @stop

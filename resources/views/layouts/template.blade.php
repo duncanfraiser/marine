@@ -11,6 +11,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {{-- google font roboto --}}
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}?4">
     <title>EMIS</title>
     <!-- Piwik -->
@@ -34,6 +36,7 @@
     @include('_includes.nav')
     @yield('content')
     @include('_includes.footer')
+{{--     @include('_includes.footer') --}}
     @yield('scripts')
   </body>
 </html>

@@ -6,6 +6,10 @@
       <div class='col-md-12 orderdiv' style="padding-bottom: 5em">
 <h2>Create Article</h2>
 {{Form::open(['method' => 'POST', 'action' => 'NewsController@store', 'files' => true])}}
+	      <div class="form-group">
+	        {{Form::label('header', 'Header:')}}
+	        {{Form::text('header', null, ['class' => 'form-control', 'placeholder' => 'Enter Header'])}}
+	      </div>
 	<div class="form-group">	
 				@if($errors->has('title'))		    	
 	    		{{Form::label('title', 'Please Enter Title:', ['class' => 'errs'])}}

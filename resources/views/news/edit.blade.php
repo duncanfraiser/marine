@@ -5,6 +5,15 @@
       <div class='col-md-12 orderdiv' style="padding-bottom: 5em">
 <h2>Edit News Article</h2>
 {{Form::model($news, ['method' => 'PATCH', 'files' => true, 'action' => ['NewsController@update', $news->id]])}}
+	<div class="form-group">		
+				@if($errors->has('type'))		    	
+	    		{{Form::label('type', 'Please Select Article Type:', ['class' => 'errs'])}}<br/>
+	    		@else
+	    		{{ Form::label('type', 'Select Article Type:')}}<br />
+				@endif
+    	{{ Form::radio('type', 'NEWS') }} {{ Form::label('type', 'News')}}<br />
+		{{ Form::radio('type', 'SPECIALS') }} {{ Form::label('type', 'Specials')}}
+ 	</div>
 	<div class="form-group">
 		{{Form::label('title', 'Title:')}}
 		{{Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Enter Title'])}}

@@ -107,6 +107,7 @@ class NewsController extends Controller
         $pic->storeAs('public/img', $pic->getClientOriginalName());
         $news->img = $pic->getClientOriginalName();
         }
+        $news->type = $request->type;
         $news->title = $request->title;
         $news->excerpt = $request->excerpt;
         $news->body = $request->body;

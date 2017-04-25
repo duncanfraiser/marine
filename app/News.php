@@ -9,6 +9,7 @@ class News extends Model
 {
 	use SoftDeletes;
 	protected $fillable = [
+			'header',
    			'title',
    			'show',
    			'type',

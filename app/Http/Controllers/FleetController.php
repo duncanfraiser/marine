@@ -82,7 +82,9 @@ class FleetController extends Controller
         $pic->storeAs('public/img', $pic->getClientOriginalName());
         $fleet->img = $pic->getClientOriginalName();
         }
+        $fleet->header = $request->header;
         $fleet->title = $request->title;
+        $fleet->excerpt = $request->excerpt;
         $fleet->body = $request->body;
         $fleet->save();
 

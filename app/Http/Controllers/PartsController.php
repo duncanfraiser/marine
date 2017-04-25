@@ -76,13 +76,16 @@ class PartsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
         $parts = Parts::findOrFail($id);
         if($request->img != ""){
         $pic = request()->file('img');
         $pic->storeAs('public/img', $pic->getClientOriginalName());
         $parts->img = $pic->getClientOriginalName();
         }
+        $parts->header = $request->header;
         $parts->title = $request->title;
+        $parts->excerpt = $request->excerpt;
         $parts->body = $request->body;
         $parts->save();
 

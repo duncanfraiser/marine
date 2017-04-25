@@ -37,6 +37,7 @@ class GroceryController extends Controller
      */
     public function store(Request $request)
     {
+
         $grocery = new Grocery;
         $grocery->fill($request->all());
         $grocery->save();
@@ -82,7 +83,9 @@ class GroceryController extends Controller
         $pic->storeAs('public/img', $pic->getClientOriginalName());
         $grocery->img = $pic->getClientOriginalName();
         }
+        $grocery->header = $request->header;
         $grocery->title = $request->title;
+        $grocery->excerpt = $request->excerpt;
         $grocery->body = $request->body;
         $grocery->save();
 

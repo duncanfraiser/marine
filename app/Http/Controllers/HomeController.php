@@ -28,7 +28,7 @@ class HomeController extends Controller
     public function index()
     {
 
-        $news = News::latest()->first();
+        $news = News::latest()->take(3)->get();
         $fleet = Fleet::latest()->first();
         $grocery = Grocery::latest()->first();
         $parts = Parts::latest()->first();

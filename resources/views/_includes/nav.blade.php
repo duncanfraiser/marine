@@ -1,42 +1,39 @@
-{{-- TOP NAV BAR START --}}
-    <nav class="navbar navbar-inverse">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="{{url('/')}}"><img src="{{url('/img/logo3.png')}}"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{url('/')}}">HOME</a></li>
 
 
-        <li><a href="{{url('/order')}}">ORDER</a></li>
-        <li><a href="{{url('/recipe')}}">RECIPES</a></li>
-           <li><a href="{{url('/about')}}">ABOUT</a></li>
-        <li><a href="{{url('/contact')}}">CONTACT</a></li>
-                <li><a href="{{url('/river')}}">RIVER STAGES</a></li>
+  {{-- navbar --}}
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+      <div class="container" style="padding: 0px">
+      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" style="background-color: #fff; margin-top: 65px" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar" style="background-color: #000"></span>
+            <span class="icon-bar" style="background-color: #000"></span>
+            <span class="icon-bar" style="background-color: #000"></span>
+          </button>
+          <a class="navbar-brand scrollTo" href="{{url('/')}}"><img src="{{url('/img/EMIS-logo.png')}}"></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{url('/')}}">Home</a></li>
+            <li><a href="{{url('/order')}}">Order</a></li>
+            <li><a href="{{url('/recipe')}}">Recipes</a></li>
+            <li><a href="{{url('/about')}}">About</a></li>
+            <li><a href="{{url('/contact')}}">Contact</a></li>
+            <li><a href="{{url('/river')}}">River Stages</a></li>
 
-                <!-- Right Side Of Navbar -->
-           
-                    <!-- Authentication Links -->
-                    @if (Auth::guest())
 
-                        <li class="linavimg"><a style="padding-top: 0px; padding-bottom: 0px;" href="{{ url('/login') }}"><img class="navimg" src="{{url('img/boatwheel.png')}}"></a></li>
-{{--                         <li><a href="{{ url('/register') }}">Register</a></li> --}}
-                    @else
-                        <li class="dropdown">
 
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{url('/news/create')}}">Add Article</a></li>
-                            <li><a href="{{'/recipe/create'}}">Add Recipe</a></li>
-                            <li><a href="{{'/submission'}}">Recipe Submissions</a></li>
+            @if (Auth::guest())
+            @else
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    Hello, {{ Auth::user()->name }} <span class="caret"></span>
+                  </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="{{url('/news/create')}}">Add Article</a></li>
+                      <li><a href="{{'/recipe/create'}}">Add Recipe</a></li>
+                      <li><a href="{{'/submission'}}">Recipe Submissions</a></li>
 
                                 <li>
                                     <a href="{{ url('/logout') }}"
@@ -52,11 +49,13 @@
                             </ul>
                         </li>
                     @endif
-                </ul>
 
 
-  </div>
- </nav>
 
-    
-{{-- TOP NAV BAR END --}}
+
+
+            <li><a target="blank" href="https://www.facebook.com/ergonmarine/"><img height='25px' src="{{url('img/FB-icon.png')}}"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
