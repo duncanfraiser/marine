@@ -23,7 +23,7 @@
     <div class="col-md-4">
         @if(\Auth::check() && \Auth::user()->role == "admin")
           <div id="homeedit">
-            <a href="{{url('/parts/'.$parts->id.'/edit')}}"><button class="editbtn">Edit</button></a>
+            <a href="{{url('/parts/'.$parts->id.'/edit')}}"><button class="editbtn">Edits</button></a>
           </div>
         @endif
       <img class="landimg" src="{{asset('storage/img/'.$parts->img)}}">
