@@ -13,7 +13,7 @@
         @endif
   
       <img class="landimg" src="{{asset('storage/img/'.$grocery->img)}}">
-      <div style="color: #fff; background-color: #312B33;"><center><h4 style="margin: 0px; padding: 5px 5px">{{$grocery->header}}</h4></center></div>
+      <div style="color: #fff; background-color: #312B33; margin-bottom: 2em"><center><h5 style="margin: 0px; padding: 5px 5px">{{$grocery->header}}</h5></center></div>
       <a href="{{url('/grocery/'.$grocery->id)}}"><h4>{{$grocery->title}}</h4></a>
       <p>{!!$grocery->excerpt!!}</p>
     </div>
@@ -27,7 +27,7 @@
           </div>
         @endif
       <img class="landimg" src="{{asset('storage/img/'.$parts->img)}}">
-      <div style="color: #fff; background-color: #312B33;"><center><h4 style="margin: 0px; padding: 5px 5px">{{$parts->header}}</h4></center></div>
+      <div style="color: #fff; background-color: #312B33; margin-bottom: 2em"><center><h5 style="margin: 0px; padding: 5px 5px">{{$parts->header}}</h5></center></div>
       <a href="{{url('/parts/'.$parts->id)}}"><h4>{{$parts->title}}</h4></a>
       <p>{!!$parts->excerpt!!}</p>
     </div>
@@ -47,7 +47,7 @@
      
       <img class="landimg" src="{{asset('storage/img/'.$fleet->img)}}">
 
-       <div style="color: #fff; background-color: #312B33;"><center><h4 style="margin: 0px; padding: 5px 5px">{{$fleet->header}}</h4></center></div>
+       <div style="color: #fff; background-color: #312B33; margin-bottom: 2em"><center><h5 style="margin: 0px; padding: 5px 5px">{{$fleet->header}}</h5></center></div>
 
 
       <a href="{{url('/fleet/'.$fleet->id)}}"><h4>{{$fleet->title}}</h4></a>
@@ -68,7 +68,7 @@
           </div>
         @endif
       <img class="landimg" src="{{asset('storage/img/'.$new->img)}}">
-      <div style="color: #fff; background-color: #312B33;"><center><h4 style="margin: 0px; padding: 5px 5px">{{$new->type}}</h4></center></div>
+      <div style="color: #fff; background-color: #312B33; margin-bottom: 2em"><center><h5 style="margin: 0px; padding: 5px 5px">{{$new->type}}</h5></center></div>
       <a href="{{url('/news/'.$new->id)}}"><h4>{{$new->title}}</h4></a>
       <p>{!!$new->excerpt!!}</p>
     </div>
