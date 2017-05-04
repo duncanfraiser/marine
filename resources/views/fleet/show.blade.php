@@ -6,7 +6,8 @@
 
     <div class="col-md-6 col-md-offset-3 show">
 
-      <img width="100%"  src="{{url('/img/fueling.png')}}">
+      <img width="100%"  src="{{url('storage/img/'.$fleet->img)}}">
+
    
       <div class='col-md-12'>
       <center><h4>{{$fleet->title}}</h4></center>
