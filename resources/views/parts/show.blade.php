@@ -6,8 +6,8 @@
 
     <div class="col-md-6 col-md-offset-3 show">
 
-      <img width="100%"  src="{{url('/img/parts.png')}}">
-   
+      <img width="100%"  src="{{url('storage/img/'.$parts->img)}}">
+
       <div class='col-md-12'>
       <center><h4>{{$parts->title}}</h4></center>
       <p>{!!$parts->body!!}</p>
