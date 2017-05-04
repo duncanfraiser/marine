@@ -27,7 +27,15 @@
         {{Form::submit('Enter', ['class' => 'formbtn'])}}
       </div>      
       {{Form::close()}}
+      <div class="col-md-12">
+        <h4>Ergon Marine & Industrial Supply, Inc.</h4>
+<p>100 Lee Street<br/>
+Vicksburg MS 39180-5070<br/>
+Phone 601-636-6552<br/>
+Fax 601-636-6173</p>
+</div>
   </div>
+
 </div>
 </div>
 @stop
