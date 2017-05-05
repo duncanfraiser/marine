@@ -10,7 +10,7 @@
       <div class='col-md-12'>
       <center><h4>{{$grocery->title}}</h4></center>
       <p>{!!$grocery->body!!}</p><br/>
-      <a href="{{url('/order')}}"><button class="formbtn">Start Shopping</button></a>
+      <a href="{{url('/files/myOrder.xls')}}"><button class="formbtn">Grocery Order Form</button></a>
 
       </div>
 

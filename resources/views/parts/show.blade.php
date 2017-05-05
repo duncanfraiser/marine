@@ -10,7 +10,8 @@
 
       <div class='col-md-12'>
       <center><h4>{{$parts->title}}</h4></center>
-      <p>{!!$parts->body!!}</p>
+      <p>{!!$parts->body!!}</p><br/>
+      <a href="{{url('/files/myParts.xls')}}"><button class="formbtn">Parts Order Form</button></a>
       </div>
 
 

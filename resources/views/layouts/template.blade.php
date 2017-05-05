@@ -13,7 +13,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {{-- google font roboto --}}
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}?4">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}?5">
     <title>EMIS</title>
     <!-- Piwik -->
     <script type="text/javascript">

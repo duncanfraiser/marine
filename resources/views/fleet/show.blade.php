@@ -11,8 +11,7 @@
    
       <div class='col-md-12'>
       <center><h4>{{$fleet->title}}</h4></center>
-      <p>{!!$fleet->body!!}</p><br/>
-      <a href="{{url('/order')}}"><button class="formbtn">Start Shopping</button></a>
+      <p>{!!$fleet->body!!}</p>
       </div>
 
 
