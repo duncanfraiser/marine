@@ -17,6 +17,6 @@
 <div class="col-md-12 foots">
 <div class="container">
   <p class="footData">
-  &copy; 2017 Ergon Marine & Industrial Supply, Inc.  All Rights Reserved. California Transparency in Supply Chains Act.<a href="{{url('/login')}}"><img height="20px" style="float: left" src="{{url('/img/BoatWheel_black.png')}}"></a></p>
+  &copy; <?php echo date("Y"); ?> Ergon Marine & Industrial Supply, Inc.  All Rights Reserved. California Transparency in Supply Chains Act.<a href="{{url('/login')}}"><img height="20px" style="float: left" src="{{url('/img/BoatWheel_black.png')}}"></a></p>
 </div>
 </div>
